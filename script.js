@@ -970,12 +970,12 @@ openApp.msg = () => { $("#mthr").classList.remove("on"); curT = null; rth(); };
 
     return `<i class="ig-av ${cls || ""}" style="width:${size}px;height:${size}px;${background}"></i>`;
   }
-  // Use the real image file when one is provided; otherwise leave it blank.
+  //image file 
   const bgImg = (k, h, custom) => custom
     ? `background-image:url('${String(custom).replace(/'/g, "%27")}')`
     : "background-image:none";
 
-  // Reusable Instagram icons used throughout the feed, profile, and messages.
+  // Instagram.
   const ic = (n, c) => `<svg class="ig-i ${c || ""}"><use href="#i-${n}"/></svg>`;
   /* ---------- content ---------- */
   const STORIES = ["wintervfuerte", "luchengco.ning", "gigiaeri", "rjthegreat", "yezhi.sy", "dubaiminchewycookie"];
@@ -1031,14 +1031,14 @@ openApp.msg = () => { $("#mthr").classList.remove("on"); curT = null; rth(); };
         { me: 1, share: U.g, t: dAgo(1, 22, 38) },
         { me: 0, x: "you already make me the happiest, karina", t: dAgo(1, 22, 40), r: "❤️" }
       ] },
-    { u: "luchengco.ning", un: 1, m: [{ me: 0, x: "oy gaita ka", t: ago(190) }, { me: 1, x: "oh?", t: ago(188) }, { me: 0, x: "sama ka mamaya? kasama si winter", t: ago(185) }, { me: 0, x: "send it to me rachel 😭", t: ago(24) }] },
-    { u: "gigiaeri", m: [{ me: 1, x: "aeri what time are we leaving", t: ago(60 * 7) }, { me: 0, x: "3pm! wag ma-late ha", t: ago(60 * 7 - 4) }, { me: 1, x: "depende kung 3 yan", t: ago(60 * 7 - 6) }] },
-    { u: "jenotuazon", m: [{ me: 0, x: "court ka today?", t: ago(60 * 28) }, { me: 1, x: "oo, bakit?", t: ago(60 * 28 - 2) }, { me: 0, x: "wala. dala ka food pauwi", t: ago(60 * 28 - 3) }, { me: 1, x: "yakk asim mo gago", t: ago(60 * 28 - 5) }] },
-    { u: "chaerryontop", m: [{ me: 0, x: "cafe tayo this sat?? 🍒", t: ago(60 * 30) }, { me: 1, x: "yesss libre mo", t: ago(60 * 30 - 7) }, { me: 0, x: "wala sumabog pagkalis namin", t: ago(60 * 30 - 8) }] },
-    { u: "liazobel", m: [{ me: 0, x: "anong oras kayo uuwi?", t: ago(60 * 50) }, { me: 1, x: "mga 6 po ate", t: ago(60 * 50 - 4) }, { me: 0, x: "hmmm", t: ago(60 * 50 - 5) }] },
-    { u: "igotyuandme", m: [{ me: 0, x: "your post is sooo pretty", t: ago(60 * 72) }, { me: 1, x: "stoppp thank youuu 🥹", t: ago(60 * 72 - 10) }] },
-    { u: "yezhi.sy", m: [{ me: 1, x: "did u finish the plates??", t: ago(60 * 24 * 5) }, { me: 0, x: "no 💀 help", t: ago(60 * 24 * 5 - 9) }] },
-    { u: "rjthegreat", m: [{ me: 0, x: "bball sunday?", t: ago(60 * 24 * 6) }, { me: 1, x: "tomboy alert", t: ago(60 * 24 * 6 - 3) }] },
+    { u: "luchengco.ning", un: 1, m: [{ me: 0, x: "send it to me rachel 😭", t: ago(24) }] },
+    { u: "gigiaeri", m: [{ me: 1, x: "depende kung 3 yan", t: ago(60 * 7 - 6) }] },
+    { u: "jenotuazon", m: [{ me: 1, x: "yakk asim mo gago", t: ago(60 * 28 - 5) }] },
+    { u: "chaerryontop", m: [{ me: 0, x: "wala sumabog pagka alis namin", t: ago(60 * 30 - 8) }] },
+    { u: "liazobel", m: [{ me: 0, x: "hmmm", t: ago(60 * 50 - 5) }] },
+    { u: "igotyuandme", m: [{ me: 1, x: "stoppp thank youuu 🥹", t: ago(60 * 72 - 10) }] },
+    { u: "yezhi.sy", m: [{ me: 0, x: "no 💀 help", t: ago(60 * 24 * 5 - 9) }] },
+    { u: "rjthegreat", m: [{ me: 1, x: "tomboy alert", t: ago(60 * 24 * 6 - 3) }] },
     { u: "dubaiminchewycookie", m: [{ me: 0, x: "BENG SI MINJU TO NAHACK AK", t: ago(60 * 24 * 9) }] }
   ];
   const extra = store.get("igExtra", {});
